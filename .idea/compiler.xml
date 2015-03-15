@@ -24,6 +24,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="chapter1" />
+        <module name="chapter2" />
       </profile>
     </annotationProcessing>
   </component>

@@ -19,7 +19,7 @@ public class UserDao {
     private JdbcTemplate jdbcTemplate;
 
     public int getMatchCount(String userName,String password){
-        String sqlStr = "SELECT count(*) FROM t_user "+ " WHERE username=? and password=?";
+        String sqlStr = "SELECT count(*) FROM t_user "+ " WHERE user_name=? and password=?";
         return jdbcTemplate.queryForInt(sqlStr,new Object[]{userName,password} );
     }
 
